@@ -3,6 +3,7 @@
 use suvilao\DesignPattern\CalculadoraDeDescontos;
 use suvilao\DesignPattern\CalculadoraDeImpostos;
 use suvilao\DesignPattern\Impostos\ICMS;
+use suvilao\DesignPattern\Impostos\IKCV;
 use suvilao\DesignPattern\Impostos\ISS;
 use suvilao\DesignPattern\Orcamento;
 
@@ -28,4 +29,14 @@ $orcamento->valor = 600;
 $orcamento->itens = 5;
 
 echo $calculadora->calculaDescontos($orcamento);
+*/
+
+/*
+$calculadora = new CalculadoraDeImpostos();
+$orcamento = new Orcamento();
+
+$orcamento->valor = 600;
+$orcamento->itens = 5;
+
+echo $calculadora->calcula($orcamento, new IKCV());
 */
